@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/010/839/424/original/aesthetic-minimal-cute-pastel-pink-wallpaper-with-abstract-checkers-checkerboard-decoration-backdrop-illustration-perfect-for-wallpaper-backdrop-postcard-background-banner-vector.jpg);
+    background-size: cover;
+    text-align: center;
+}
+

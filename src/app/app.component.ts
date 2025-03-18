@@ -1,12 +1,31 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common'; // Para usar ngIf
+
+
 
 @Component({
+  
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [FormsModule,CommonModule],
+
+  styleUrl: './app.component.css',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+
 })
 export class AppComponent {
-  title = 'ValenDi-App';
+
+  name: string = '';
+  names:  string[] = [];
+
+  addName(): void {
+
+    console.log('click event working ok')
+
+    if (this.name.trim()) {
+      this.names.push(this.name);
+      this.name = '';
+    }
+  }
 }
